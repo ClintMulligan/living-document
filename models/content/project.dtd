@@ -1,0 +1,22 @@
+<!-- XSDs are prefereable to DTDs -->
+<!-- Preserved for demonstration purposes only -->
+
+<!DOCTYPE tasks [
+<!ELEMENT ns:project (ns:meta,ns:tasks)>
+<!ELEMENT ns:meta (ns:project-name,ns:client)>
+<!ELEMENT ns:project-name (#PCDATA)>
+<!ELEMENT ns:client (#PCDATA)>
+<!ELEMENT ns:tasks (ns:task+)>
+<!ELEMENT ns:task (ns:team+,ns:description,ns:percent-complete,ns:due-date)>
+<!ELEMENT ns:team (var+)>
+<!ELEMENT ns:description (var+)>
+<!ELEMENT ns:percent-complete (#PCDATA)>
+<!ELEMENT ns:start-date (#PCDATA)>
+<!ELEMENT ns:due-date (#PCDATA)>
+<!ELEMENT var (#PCDATA)>
+
+<!ATTLIST ns:project lang CDATA #REQUIRED>
+<!ATTLIST ns:task task-id ID #REQUIRED>
+<!ATTLIST ns:team team-id CDATA #REQUIRED>
+<!ATTLIST var name CDATA #REQUIRED>
+]>

@@ -1,0 +1,10 @@
+# Perform a series of transformations that consolidate files into a singular
+# responsive webpage.
+
+XmlDoc, XslSheet, Output File, XSLT Parameter One, XSLT Parameter Two
+
+# Example Line:
+# folder/doc.xml, folder/sheet.xsl, folder1/output.txt, null, param-name=param-value
+
+models\content\project-one.xml, handlers\make-document.xsl, english-index.html, target-language=en-US, target-theme=default-report-theme
+models\content\project-one.xml, handlers\make-document.xsl, spanish-index.html, target-language=es-MX, target-theme=default-report-theme

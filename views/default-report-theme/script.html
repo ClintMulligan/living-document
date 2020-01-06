@@ -1,0 +1,42 @@
+<wrapper>
+  <script type="text/javascript" xmlns="http://www.w3.org/1999/xhtml">
+    // Use CDATA for XHTML to not escape code characters.
+    //<![CDATA[
+
+    function formatDates(tableID, columnNumber) {
+      // tableID - ID is the unique id attribute to the table in the document
+      // columnNumber - Columns are counted left to right starting from zero
+
+      const listOfRows = document.getElementById(tableID).getElementsByTagName("tr")
+      // This may need to be less than or equal to if you want to format the
+      // first column
+      for (let counter = 1; counter < listOfRows.length; counter++) {
+        // element index begins with 0.  Therefore the 3rd Column over would be
+        // the 2nd child.
+        let desiredCell = listOfRows[counter].children[columnNumber]
+
+        // grab content of desired cell. Data should be ISO 8601 ex. "2015-05-25"
+        let isoDate = desiredCell.innerText
+
+
+        // Convert to Long Date example: "Mar 25 2015"
+        let longDate = new Date(isoDate)
+
+        // Change cell contents to Long date.
+        desiredCell.innerText = longDate.toDateString()
+      }
+    }
+
+    // Autorun initiates after DOM is ready but before whole page downloaded.
+    function autorun() {
+      formatDates("mainTable", 3)
+      formatDates("mainTable", 4)
+
+    }
+    if (document.addEventListener) document.addEventListener("DOMContentLoaded", autorun, false)
+    else if (document.attachEvent) document.attachEvent("onreadystatechange", autorun)
+    else window.onload = autorun
+    
+    //]]>
+  </script>
+</wrapper>

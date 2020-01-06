@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- Reference to a DTD. Here as Example. -->
+<!-- Not used. (the DtdProcessing property would have to be set in the XmlReader. -->
+<!-- <!DOCTYPE tasks SYSTEM "https://www.example.com/xml/project.dtd"> -->
+
+<!-- Reference a Schema in the XML doc -->
+<ns:project
+  xmlns="http://www.w3.org/1999/xhtml" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="https://www.armirage.com/examples/living-document project.xsd" 
+  xmlns:ns="https://www.armirage.com/examples/living-document"
+  
+  lang="en-US">
+
+  <ns:meta>
+    <ns:project-name>Awesome Project</ns:project-name>
+    <ns:client>Client Alpha Works</ns:client>
+  </ns:meta>
+
+  <ns:tasks>
+    <ns:task task-id="1">
+      <ns:team team-id="0000"><var name="AID0TY0A">Sales</var></ns:team>
+      <ns:description><var name="AID0T30A">Define scope and price.</var></ns:description>
+      <ns:percent-complete>100</ns:percent-complete>
+      <ns:start-date>2020-01-14T00:00</ns:start-date>
+      <ns:due-date>2020-01-15T00:00</ns:due-date>
+    </ns:task>
+
+    <ns:task task-id="2">
+      <ns:team team-id="0001"><var name="AID0TJB0A">Administrators</var></ns:team>
+      <ns:description><var name="AID0TNB0A">Plan project timeline and budget.</var></ns:description>
+      <ns:percent-complete>100</ns:percent-complete>
+      <ns:start-date>2020-01-14T00:00</ns:start-date>
+      <ns:due-date>2020-01-16T00:00</ns:due-date>
+    </ns:task>
+
+    <ns:task task-id="3">
+      <ns:team team-id="0002"><var name="AID0T1B0A">Developers</var></ns:team>
+      <ns:description><var name="AID0T5B0A">Model use cases.</var></ns:description>
+      <ns:percent-complete>90</ns:percent-complete>
+      <ns:start-date>2020-01-16T00:00</ns:start-date>
+      <ns:due-date>2020-01-18T00:00</ns:due-date>
+    </ns:task>
+
+    <ns:task task-id="4">
+      <ns:team team-id="0003"><var name="AID0TLC0A">Designers</var></ns:team>
+      <ns:description><var name="AID0TPC0A">Prototype wire frame.</var></ns:description>
+      <ns:percent-complete>80</ns:percent-complete>
+      <ns:start-date>2020-01-16T00:00</ns:start-date>
+      <ns:due-date>2020-01-20T00:00</ns:due-date>
+    </ns:task>
+
+    <ns:task task-id="5">
+      <ns:team team-id="0004"><var name="AID0T3C0A">Writers</var></ns:team>
+      <ns:description><var name="AID0TAD0A">Draft end-user documentation.</var></ns:description>
+      <ns:percent-complete>60</ns:percent-complete>
+      <ns:start-date>2020-01-20T00:00</ns:start-date>
+      <ns:due-date>2020-02-10T00:00</ns:due-date>
+    </ns:task>
+
+    <ns:task task-id="6">
+      <ns:team team-id="0002"><var name="AID0T1B0A">Developers</var></ns:team>
+      <ns:description><var name="AID0TRD0A">Prototype source code.</var></ns:description>
+      <ns:percent-complete>65</ns:percent-complete>
+      <ns:start-date>2020-01-20T00:00</ns:start-date>
+      <ns:due-date>2020-03-10T00:00</ns:due-date>
+    </ns:task>
+
+    <ns:task task-id="7">
+      <ns:team team-id="0003"><var name="AID0TLC0A">Designers</var></ns:team>
+      <ns:description><var name="AID0TCE0A">Prototype user interfaces.</var></ns:description>
+      <ns:percent-complete>75</ns:percent-complete>
+      <ns:start-date>2020-01-20T00:00</ns:start-date>
+      <ns:due-date>2020-02-05T00:00</ns:due-date>
+    </ns:task>
+
+    <ns:task task-id="8">
+      <ns:team team-id="0005"><var name="AID0TPE0A">Security</var></ns:team>
+      <ns:description><var name="AID0TTE0A">Perform security risk assement.</var></ns:description>
+      <ns:percent-complete>40</ns:percent-complete>
+      <ns:start-date>2020-01-20T00:00</ns:start-date>
+      <ns:due-date>2020-03-15T00:00</ns:due-date>
+    </ns:task>
+
+    <ns:task task-id="9">
+      <ns:team team-id="0004"><var name="AID0T3C0A">Writers</var></ns:team>
+      <ns:description><var name="AID0TEF0A">Test and record issues.</var></ns:description>
+      <ns:percent-complete>20</ns:percent-complete>
+      <ns:start-date>2020-01-20T00:00</ns:start-date>
+      <ns:due-date>2020-03-31T00:00</ns:due-date>
+    </ns:task>
+
+    <ns:task task-id="10">
+      <ns:team team-id="0002"><var name="AID0T1B0A">Developers</var></ns:team>
+      <ns:description><var name="AID0TVF0A">Commit approved source code.</var></ns:description>
+      <ns:percent-complete>10</ns:percent-complete>
+      <ns:start-date>2020-01-20T00:00</ns:start-date>
+      <ns:due-date>2020-04-10T00:00</ns:due-date>
+    </ns:task>
+
+    <ns:task task-id="11">
+      <ns:team team-id="0003"><var name="AID0TLC0A">Designers</var></ns:team>
+      <ns:description><var name="AID0TGG0A">Commit approved user interfaces.</var></ns:description>
+      <ns:percent-complete>70</ns:percent-complete>
+      <ns:start-date>2020-01-20T00:00</ns:start-date>
+      <ns:due-date>2020-04-24T00:00</ns:due-date>
+    </ns:task>
+
+    <ns:task task-id="12">
+      <ns:team team-id="0005"><var name="AID0TPE0A">Security</var></ns:team>
+      <ns:description><var name="AID0TXG0A">Test security vectors.</var></ns:description>
+      <ns:percent-complete>40</ns:percent-complete>
+      <ns:start-date>2020-01-20T00:00</ns:start-date>
+      <ns:due-date>2020-04-31T00:00</ns:due-date>
+    </ns:task>
+
+    <ns:task task-id="13">
+      <ns:team team-id="0004"><var name="AID0T3C0A">Writers</var></ns:team>
+      <ns:description><var name="AID0TIH0A">draft support documentation for help desk.</var></ns:description>
+      <ns:percent-complete>40</ns:percent-complete>
+      <ns:start-date>2020-01-20T00:00</ns:start-date>
+      <ns:due-date>2020-04-31T00:00</ns:due-date>
+    </ns:task>
+
+    <ns:task task-id="14">
+      <ns:team team-id="0000"><var name="AID0TY0A">Sales</var></ns:team>
+      <ns:description><var name="AID0TZH0A">Demonstrate product progress to client.</var></ns:description>
+      <ns:percent-complete>10</ns:percent-complete>
+      <ns:start-date>2020-01-20T00:00</ns:start-date>
+      <ns:due-date>2020-05-01T00:00</ns:due-date>
+    </ns:task>
+
+    <ns:task task-id="15">
+      <ns:team team-id="0001"><var name="AID0TJB0A">Administrators</var></ns:team>
+      <ns:description><var name="AID0TLAAC0A">Update plan for client requested changes.</var></ns:description>
+      <ns:percent-complete>0</ns:percent-complete>
+      <ns:start-date>2020-01-20T00:00</ns:start-date>
+      <ns:due-date>2020-05-03T00:00</ns:due-date>
+    </ns:task>
+
+    <ns:task task-id="16">
+      <ns:team team-id="0002"><var name="AID0T1B0A">Developers</var></ns:team>
+      <ns:description><var name="AID0T3AAC0A">Implement client changes.</var></ns:description>
+      <ns:percent-complete>0</ns:percent-complete>
+      <ns:start-date>2020-01-20T00:00</ns:start-date>
+      <ns:due-date>2020-05-10T00:00</ns:due-date>
+    </ns:task>
+
+    <ns:task task-id="17">
+      <ns:team team-id="0004"><var name="AID0T3C0A">Writers</var></ns:team>
+      <ns:description><var name="AID0TNBAC0A">commit approved end-user documentation.</var></ns:description>
+      <ns:percent-complete>20</ns:percent-complete>
+      <ns:start-date>2020-01-20T00:00</ns:start-date>
+      <ns:due-date>2020-05-10T00:00</ns:due-date>
+    </ns:task>
+
+    <ns:task task-id="18">
+      <ns:team team-id="0000"><var name="AID0TY0A">Sales</var></ns:team>
+      <ns:description><var name="AID0T5BAC0A">Deliver quality product to client.</var></ns:description>
+      <ns:percent-complete>0</ns:percent-complete>
+      <ns:start-date>2020-01-20T00:00</ns:start-date>
+      <ns:due-date>2020-05-15T00:00</ns:due-date>
+    </ns:task>
+
+    <ns:task task-id="19">
+      <ns:team team-id="0000"><var name="AID0TJB0A">Administrators</var></ns:team>
+      <ns:description><var name="AID0TPCAC0A">Evaluate project areas of success and need improvement.</var></ns:description>
+      <ns:percent-complete>0</ns:percent-complete>
+      <ns:start-date>2020-01-20T00:00</ns:start-date>
+      <ns:due-date>2020-05-30T00:00</ns:due-date>
+    </ns:task>
+
+    <ns:task task-id="20">
+      <ns:team team-id="0000"><var name="AID0TJB0A">Administrators</var></ns:team>
+      <ns:description><var name="AID0TADAC0A">Coalesce and record lessons learned from team.</var></ns:description>
+      <ns:percent-complete>20</ns:percent-complete>
+      <ns:start-date>2020-01-20T00:00</ns:start-date>
+      <ns:due-date>2020-05-31T00:00</ns:due-date>
+    </ns:task>
+
+  </ns:tasks>
+</ns:project>

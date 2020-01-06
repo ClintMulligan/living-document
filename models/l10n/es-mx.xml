@@ -1,0 +1,196 @@
+<?xml version = "1.0" encoding="utf-8" ?>
+<xliff version="1.0">
+  <file id="f1" original="task-index.html" source-language="en-US" target-language="es-MX" target-direction="ltr" datatype="plaintext">
+    <header>
+      <skl>
+        <external-file uid="" href="" />
+      </skl>
+      <phase-group>
+        <phase phase-name="extract" process-name="extraction" tool="" date="20200101T160000Z" company-name="Armirage" job-id="" contact-name="Clinton Mulligan" contact-email="example@example.com">
+          <note>
+          Ids are non-crypto hashes of English source, prepended with "A" because HTMl4 specification must not
+          start with number. While no such requirements apply to id in HTML5 some browsers still lag in support. Comes in
+          handy for the occasional collision though. The data for translations is stored in XLIFF schema.
+          </note>
+        </phase>
+      </phase-group>
+    </header>
+    <body>
+      <trans-unit id="AID0T1C0A">
+        <source>Skip to main content.</source>
+        <target>Saltar al contenido principal.</target>
+        <note> </note>
+      </trans-unit>
+      <trans-unit id="AID0TGD0A">
+        <source>Goto top of page.</source>
+        <target>Ir a la parte superior de la página.</target>
+        <note> </note>
+      </trans-unit>
+      <trans-unit id="AID0TQD0A">
+        <source>Goto bottom of page.</source>
+        <target>Ir a la parte inferior de la página.</target>
+        <note> </note>
+      </trans-unit>
+      <trans-unit id="AID0T4E0A">
+        <source>Department</source>
+        <target>DEPARTAMENTO</target>
+        <note> </note>
+      </trans-unit>
+      <trans-unit id="AID0TDF0A">
+        <source>Task</source>
+        <target>TAREA</target>
+        <note> </note>
+      </trans-unit>
+      <trans-unit id="AID0TJF0A">
+        <source>Status</source>
+        <target>ESTADO</target>
+        <note> </note>
+      </trans-unit>
+      <trans-unit id="AID0TNH0A">
+        <source>Start Date</source>
+        <target>FECHA DE INICIO</target>
+        <note> </note>
+      </trans-unit>
+      <trans-unit id="AID0TPF0A">
+        <source>Due Date</source>
+        <target>FECHA DE VENCIMIENTO</target>
+        <note> </note>
+      </trans-unit>
+      <trans-unit id="AID0TY0A">
+        <source>Sales</source>
+        <target>Ventas</target>
+        <note> </note>
+      </trans-unit>
+      <trans-unit id="AID0TJB0A">
+        <source>Administrators</source>
+        <target>Administradores</target>
+        <note> </note>
+      </trans-unit>
+      <trans-unit id="AID0T1B0A">
+        <source>Developers</source>
+        <target>Desarrolladores</target>
+        <note> </note>
+      </trans-unit>
+      <trans-unit id="AID0TLC0A">
+        <source>Designers</source>
+        <target>Diseñadores</target>
+        <note> </note>
+      </trans-unit>
+      <trans-unit id="AID0T3C0A">
+        <source>Writers</source>
+        <target>Escritores</target>
+        <note> </note>
+      </trans-unit>
+      <trans-unit id="AID0TPE0A">
+        <source>Security</source>
+        <target>Seguridad</target>
+        <note> </note>
+      </trans-unit>
+      <trans-unit id="AID0T30A">
+        <source>Define scope and price.</source>
+        <target>Definir alcance y precio.</target>
+        <note> </note>
+      </trans-unit>
+      <trans-unit id="AID0TNB0A">
+        <source>Plan project timeline and budget.</source>
+        <target>Planifique el cronograma y el presupuesto del proyecto.</target>
+        <note> </note>
+      </trans-unit>
+      <trans-unit id="AID0T5B0A">
+        <source>Model use cases.</source>
+        <target>Modelo de casos de uso.</target>
+        <note> </note>
+      </trans-unit>
+      <trans-unit id="AID0TPC0A">
+        <source>Prototype wire frame.</source>
+        <target>Prototipo de marco de alambre.</target>
+        <note> </note>
+      </trans-unit>
+      <trans-unit id="AID0TAD0A">
+        <source>Draft end-user documentation.</source>
+        <target>Borrador de documentación para el usuario final.</target>
+        <note> </note>
+      </trans-unit>
+      <trans-unit id="AID0TRD0A">
+        <source>Prototype source code.</source>
+        <target>Código fuente del prototipo.</target>
+        <note> </note>
+      </trans-unit>
+      <trans-unit id="AID0TCE0A">
+        <source>Prototype user interfaces.</source>
+        <target>Prototipo de interfaces de usuario.</target>
+        <note> </note>
+      </trans-unit>
+      <trans-unit id="AID0TTE0A">
+        <source>Perform security risk assessment.</source>
+        <target>Realizar una evaluación de riesgos de seguridad.</target>
+        <note> </note>
+      </trans-unit>
+      <trans-unit id="AID0TEF0A">
+        <source>Test and record issues.</source>
+        <target>Probar y registrar problemas.</target>
+        <note> </note>
+      </trans-unit>
+      <trans-unit id="AID0TVF0A">
+        <source>Commit approved source code.</source>
+        <target>Comprometer el código fuente aprobado.</target>
+        <note> </note>
+      </trans-unit>
+      <trans-unit id="AID0TGG0A">
+        <source>Commit approved user interfaces.</source>
+        <target>Comprometer interfaces de usuario aprobadas.</target>
+        <note> </note>
+      </trans-unit>
+      <trans-unit id="AID0TXG0A">
+        <source>Test security vectors.</source>
+        <target>Prueba de vectores de seguridad.</target>
+        <note> </note>
+      </trans-unit>
+      <trans-unit id="AID0TIH0A">
+        <source>Draft support documentation for help desk.</source>
+        <target>Borrador de documentación de soporte para mesa de ayuda.</target>
+        <note> </note>
+      </trans-unit>
+      <trans-unit id="AID0TZH0A">
+        <source>Demonstrate product progress to client.</source>
+        <target>Demuestre el progreso del producto al cliente.</target>
+        <note> </note>
+      </trans-unit>
+      <trans-unit id="AID0TLAAC0A">
+        <source>Update plan for client requested changes.</source>
+        <target>Plan de actualización para los cambios solicitados por el cliente.</target>
+        <note> </note>
+      </trans-unit>
+      <trans-unit id="AID0T3AAC0A">
+        <source>Implement client changes.</source>
+        <target>Implementar cambios de cliente.</target>
+        <note> </note>
+      </trans-unit>
+      <trans-unit id="AID0TNBAC0A">
+        <source>Commit approved end-user documentation.</source>
+        <target>Comprometer la documentación aprobada del usuario final.</target>
+        <note> </note>
+      </trans-unit>
+      <trans-unit id="AID0T5BAC0A">
+        <source>Deliver quality product to client.</source>
+        <target>Entregar productos de calidad al cliente.</target>
+        <note> </note>
+      </trans-unit>
+      <trans-unit id="AID0TPCAC0A">
+        <source>Evaluate project areas of success and need improvement.</source>
+        <target>Evaluar áreas de proyecto de éxito y necesidad de mejora.</target>
+        <note> </note>
+      </trans-unit>
+      <trans-unit id="AID0TADAC0A">
+        <source>Coalesce and record lessons learned from team.</source>
+        <target>Fusionar y registrar las lecciones aprendidas del equipo.</target>
+        <note> </note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
+
+
+
+
+

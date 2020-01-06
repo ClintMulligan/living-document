@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<xs:schema
+  targetNamespace="tasks"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  elementFormDefault="qualified">
+
+  <xs:simpleType name="percent-type">
+    <xs:restriction base = "xs:integer">
+      <xs:minInclusive value = "0"/>
+      <xs:maxInclusive value = "100"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="dep-id-type">
+    <xs:restriction base="^\d\d\d\d$" />
+  </xs:simpleType>
+
+  <xs:simpleType name="lang-type">
+    <xs:restriction base="^[a-z]{2}(-[A-Z]{2})*" />
+  </xs:simpleType>
+
+  <xs:complexType name="var-type" mixed="true">
+    <xs:sequence>
+      <xs:any minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="name" type="xs:string" use="required" />
+  </xs:complexType>
+
+  <xs:complexType name="description-type">
+    <xs:sequence>
+      <xs:element name="var" type="var-type" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="team-type">
+    <xs:sequence>
+      <xs:element name="var" type="var-type" />
+    </xs:sequence>
+    <xs:attribute name="team-id" type="team-id-type" use="required" />
+  </xs:complexType>
+
+  <xs:complexType name="task-type">
+    <xs:sequence>
+      <xs:element name="team" type="team-type" />
+      <xs:element name="description" type="description-type" />
+      <xs:element name="percent-complete" type="percent-type" />
+      <xs:element name="start-date" type="xs:date" />
+      <xs:element name="due-date" type="xs:date" />
+    </xs:sequence>
+    <xs:attribute name="task-id" type="xs:positiveInteger" use="required" />
+  </xs:complexType>
+
+  <xs:complexType name="tasks-type">
+    <xs:sequence>
+      <xs:element name="task" type="task-type" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="meta-type">
+    <xs:sequence>
+      <xs:element name="project-name" type="xs:string" />
+      <xs:element name="client" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="project-type">
+    <xs:sequence>
+      <xs:element name="meta" type="meta-type" />
+      <xs:element name="tasks" type="tasks-type" />
+    </xs:sequence>
+    <xs:attribute name="lang" type="lang-type" use="required" />
+  </xs:complexType>
+
+  <xs:element name="project" type="project-type" />
+
+</xs:schema>
